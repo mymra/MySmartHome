@@ -85,6 +85,18 @@ public class MyPhone {
         }
     }
 
+    // start an installed app by name without knowing its specific type
+    public void startApp(String appName) {
+        for (App app : apps) {
+            if (app.getAppName().equalsIgnoreCase(appName)) {
+                app.run();
+                return;
+            }
+        }
+
+        System.out.println("App not installed: " + appName);
+    }
+
     public void listApps() {
         System.out.println("Installed apps:");
 
