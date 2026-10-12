@@ -61,4 +61,8 @@ public class SmartHomeApp extends App {
             System.out.println("Device cannot be scheduled: " + deviceName);
         }
     }
+    // Turn off all registered devices through the app
+    public void turnOffAll() {
+        home.turnOffAll();
+    }
 }
