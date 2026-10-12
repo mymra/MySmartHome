@@ -13,7 +13,7 @@ public class Thermostat extends SmartDevice {
     }
 
     public void setTemperature(double temperature) {
-        if (temperature >= 5 && temperature <= 35) {
+        if (temperature >= -45 && temperature <= 45) {
             this.temperature = temperature;
         } else {
             System.out.println("Temperature must be between 5 and 35 degrees.");
